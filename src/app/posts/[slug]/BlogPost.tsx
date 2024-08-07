@@ -17,7 +17,7 @@ export const BlogPost = ({ author, content,coverImage,markdownStyles, title, }: 
         </a>
         </h2>
         <article className="mb-32">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">{children}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">{title}
           </h1>
         <div className="hidden md:block md:mb-12"><Avatar name={author.name} picture={author.picture} />
         </div>
