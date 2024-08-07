@@ -1,63 +1,22 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# 🛠️ Test Playground Repository
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+## 🎯 Purpose
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates) feature using Markdown files as the data source.
+This repository is designed as a test playground to evaluate various aspects of your development skills and problem-solving abilities. The goal is to understand how you approach, debug, and improve a given codebase, particularly focusing on React and Next.js.
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+## 📝 What We Are Going to Test
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+1. **🧹 Code Quality**: Assess your ability to write clean, maintainable, and efficient code.
+2. **💬 Explanatory Skills**: Evaluate how well you can explain your thought process and the changes you make.
+3. **⚠️ Error Prevention**: Examine your strategies for preventing bugs and handling potential issues.
+4. **🐞 Debugging Ability**: Test your skill in identifying and fixing errors in the code.
+5. **⚛️ React Knowledge**: Gauge your understanding and application of React principles and best practices.
+6. **🌐 Next.js Knowledge**: Determine your familiarity with Next.js features, structure, and optimization techniques.
+7. **🔧 Optimization and Refactoring**: Assess your ability to improve existing code, making it more efficient and readable.
 
-## Demo
+## 🛠️ Optimization Criteria
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
-
-### Related examples
-
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
-- [Builder.io](/examples/cms-builder-io)
-- [TinaCMS](/examples/cms-tina/)
-- [Enterspeed](/examples/cms-enterspeed)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example blog-starter blog-starter-app
-```
-
-```bash
-yarn create next-app --example blog-starter blog-starter-app
-```
-
-```bash
-pnpm create next-app --example blog-starter blog-starter-app
-```
-
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-# Notes
-
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+1. **Maintainability**: The ease with which the code can be maintained and extended.
+2. **Readability**: How easily the code can be read and understood by others.
+3. **Performance**: The efficiency of the code in terms of speed and resource usage.
+4. **SEO**: Ensuring the web application is optimized for search engines.

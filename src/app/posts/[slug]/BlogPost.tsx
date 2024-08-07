@@ -1,4 +1,7 @@
 'use client';
+import Avatar from '@/app/_components/avatar';
+import CoverImage from '@/app/_components/cover-image';
+import DateFormatter from '@/app/_components/date-formatter';
 import { useState, useEffect } from 'react'
 
 export const BlogPost = ({ author, content,coverImage,markdownStyles, title, }: any) => {
