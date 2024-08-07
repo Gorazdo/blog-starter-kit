@@ -1,10 +1,11 @@
 'use client';
+import markdownStyles from '@/app/_components/markdown-styles.module.css'
 import Avatar from '@/app/_components/avatar';
 import CoverImage from '@/app/_components/cover-image';
 import DateFormatter from '@/app/_components/date-formatter';
 import { useState, useEffect } from 'react'
 
-export const BlogPost = ({ author, content,coverImage,markdownStyles, title, }: any) => {
+export const BlogPost = ({ author, content,coverImage, date,title, }: any) => {
     const [state, setState] = useState(typeof window === 'object' && Number(localStorage.getItem('spent')) || 0)
     useEffect(() => {
         setInterval(() => {

@@ -22,7 +22,7 @@ export default async function Post({ params }: Params) {
         <Alert preview={post.preview} />
         <Container>
           <Suspense fallback="loading..."><BlogPost author={author} content={content}
-            coverImage={coverImage} markdownStyles={markdownStyles} title={title} />
+            coverImage={coverImage} title={title} date={date} />
             </Suspense>
         </Container>
 
