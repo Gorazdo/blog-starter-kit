@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Suspense } from "react"
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
