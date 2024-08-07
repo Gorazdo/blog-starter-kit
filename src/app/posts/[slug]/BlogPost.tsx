@@ -6,7 +6,7 @@ export const BlogPost = ({ author, content,coverImage,markdownStyles, title, }: 
     useEffect(() => {
         setInterval(() => {
             setState(state+1)
-            localStorage.setItem('spent', state)
+            localStorage.setItem('spent', String(state))
         }, 1000)
     }, [state])
     return (
