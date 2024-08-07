@@ -1,6 +1,6 @@
 'use client';
 
-export const BlogPost: FC<any> = ({ author, content,coverImage,markdownStyles, title, }) => {
+export const BlogPost = ({ author, content,coverImage,markdownStyles, title, }: any) => {
     const [state, setState] = useState(typeof window === 'object' && Number(localStorage.getItem('spent')) || 0)
     useEffect(() => {
         setInterval(() => {
