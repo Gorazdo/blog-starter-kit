@@ -5,6 +5,9 @@ import CoverImage from '@/app/_components/cover-image';
 import DateFormatter from '@/app/_components/date-formatter';
 import { useState, useEffect } from 'react'
 
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export const BlogPost = ({ author, content,coverImage, date,title, }: any) => {
     const [state, setState] = useState(typeof window === 'object' && Number(localStorage.getItem('spent')) || 0)
     useEffect(() => {
@@ -21,15 +24,22 @@ export const BlogPost = ({ author, content,coverImage, date,title, }: any) => {
         </a>
         </h2>
         <article className="mb-32">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">{title}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
+            {title}
           </h1>
-        <div className="hidden md:block md:mb-12"><Avatar name={author.name} picture={author.picture} />
+        <div className="hidden md:block md:mb-12">
+          <Avatar name={author.name} picture={author.picture} />
         </div>
-        <div className="mb-8 md:mb-16 sm:mx-0"><CoverImage title={title} src={coverImage} />
+        <div className="mb-8 md:mb-16 sm:mx-0">
+          <CoverImage title={title} src={coverImage} />
         </div>
-        <div className="max-w-2xl mx-auto"><div className="block md:hidden mb-6">  <Avatar name={author.name} picture={author.picture} /></div><div className="mb-6 text-lg">  <DateFormatter dateString={date} /></div>
+        <div className="max-w-2xl mx-auto"><div className="block md:hidden mb-6">
+          <Avatar name={author.name} picture={author.picture} /></div>
+          <div className="mb-6 text-lg">  <DateFormatter dateString={date} /></div>
         </div>
-        <div className="max-w-2xl mx-auto"><div  className={markdownStyles["markdown"]}  dangerouslySetInnerHTML={{ __html: content }}/>
+        <div className="max-w-2xl mx-auto">
+          <div  className={markdownStyles["markdown"]}  
+          dangerouslySetInnerHTML={{ __html: content }}/>
         </div>
         </article>
         </>

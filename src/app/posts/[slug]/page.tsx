@@ -22,9 +22,15 @@ export default async function Post({ params }: Params) {
       <main>
         <Alert preview={post.preview} />
         <Container>
-          <Suspense fallback="loading..."><BlogPost author={author} content={content}
-            coverImage={coverImage} title={title} date={date} />
-            </Suspense>
+          <Suspense fallback="loading...">
+            <BlogPost
+              author={post.author}
+              content={content}
+              coverImage={post.coverImage}
+              title={post.title}
+              date={post.date} 
+              />
+          </Suspense>
         </Container>
 
       </main>
