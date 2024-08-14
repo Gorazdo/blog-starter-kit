@@ -9,13 +9,23 @@ import { useState, useEffect } from 'react'
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const BlogPost = ({ author, content,coverImage, date,title, }: any) => {
+
     const [state, setState] = useState(typeof window === 'object' && Number(localStorage.getItem('spent')) || 0)
+  
     useEffect(() => {
-        setInterval(() => {
-            setState(state+1)
-            localStorage.setItem('spent', String(state))
-        }, 1000)
-    }, [state])
+        const id = setInterval(() => {
+            setState(prevState => {
+              const newState = prevState + 1;
+              localStorage.setItem('spent', String(newState))
+              return newState;
+            });
+        }, 1000);
+
+        return () => {
+          clearInterval(id);
+        }
+    }, [])
+
     return (
         <>
         <span>Spent on the page {state} seconds</span>

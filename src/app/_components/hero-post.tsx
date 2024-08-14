@@ -3,24 +3,24 @@ import CoverImage from "@/app/_components/cover-image";
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
 import DateFormatter from "./date-formatter";
+import { Post } from "@/interfaces/post";
 
-type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  author: Author;
-  slug: string;
+type HeroPostProps = {
+  post: Post
 };
 
 export function HeroPost({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) {
+  post
+}: HeroPostProps) {
+  const {
+    title, 
+    coverImage, 
+    date, 
+    excerpt,
+    author,
+    slug
+  } = post;
+
   return (
     <section>
       <div className="mb-8 md:mb-16">

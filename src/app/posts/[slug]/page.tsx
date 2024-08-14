@@ -12,7 +12,7 @@ export default async function Post({ params }: Params) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return null
+    return <>There is not post with this id</>
   }
 
   const content = await markdownToHtml(post.content || "");
